@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Current Weather View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CurrentWeatherViewController" customModule="Swift_Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalgaryBG" translatesAutoresizingMaskIntoConstraints="NO" id="34I-gP-Lel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="58" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMy-LG-dM5">
+                                <rect key="frame" x="111" y="262" width="154" height="144"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="120"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CELSIUS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1s2-Ea-0Vc">
+                                <rect key="frame" x="111" y="413" width="153" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calgary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ma-s8-71V">
+                                <rect key="frame" x="111" y="89" width="154" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="34I-gP-Lel" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9M9-h9-4bL"/>
+                            <constraint firstAttribute="trailing" secondItem="34I-gP-Lel" secondAttribute="trailing" id="DnI-CZ-w3a"/>
+                            <constraint firstItem="4ma-s8-71V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="89" id="EXD-IO-hZf"/>
+                            <constraint firstItem="4ma-s8-71V" firstAttribute="centerX" secondItem="PMy-LG-dM5" secondAttribute="centerX" id="F7i-Nt-PEH"/>
+                            <constraint firstItem="1s2-Ea-0Vc" firstAttribute="leading" secondItem="PMy-LG-dM5" secondAttribute="leading" id="Fiz-g0-txr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="34I-gP-Lel" secondAttribute="bottom" id="LdE-Cz-qaJ"/>
+                            <constraint firstItem="PMy-LG-dM5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NSy-ga-aRq"/>
+                            <constraint firstItem="34I-gP-Lel" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V1h-hN-XB9"/>
+                            <constraint firstItem="1s2-Ea-0Vc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z8c-bq-xYG"/>
+                            <constraint firstItem="4ma-s8-71V" firstAttribute="trailing" secondItem="PMy-LG-dM5" secondAttribute="trailing" id="anY-HC-ZtR"/>
+                            <constraint firstItem="1s2-Ea-0Vc" firstAttribute="top" secondItem="PMy-LG-dM5" secondAttribute="bottom" constant="7" id="krp-fA-ZcR"/>
+                            <constraint firstItem="PMy-LG-dM5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pk9-rS-o1Y"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgImg" destination="34I-gP-Lel" id="d9Y-6h-WSS"/>
+                        <outlet property="cityLbl" destination="4ma-s8-71V" id="FaW-2y-I5b"/>
+                        <outlet property="temperatureLbl" destination="PMy-LG-dM5" id="Sew-3A-keL"/>
+                        <outlet property="unitLbl" destination="1s2-Ea-0Vc" id="HWY-l1-OYD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="121.88905547226388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CalgaryBG" width="2000" height="1000"/>
+    </resources>
 </document>

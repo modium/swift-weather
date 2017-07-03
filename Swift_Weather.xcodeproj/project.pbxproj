@@ -15,6 +15,7 @@
 		3CC277A51F0AEEA100A5BE51 /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC277A41F0AEEA100A5BE51 /* NetworkProcessor.swift */; };
 		3CC277A81F0AF9A200A5BE51 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC277A71F0AF9A200A5BE51 /* ForecastService.swift */; };
 		3CC277AA1F0AFC2100A5BE51 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC277A91F0AFC2100A5BE51 /* CurrentWeather.swift */; };
+		3CC277AC1F0B048300A5BE51 /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC277AB1F0B048300A5BE51 /* CurrentWeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3CC277A41F0AEEA100A5BE51 /* NetworkProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 		3CC277A71F0AF9A200A5BE51 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 		3CC277A91F0AFC2100A5BE51 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		3CC277AB1F0B048300A5BE51 /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				3CC277991F0AED7B00A5BE51 /* Assets.xcassets */,
 				3CC2779B1F0AED7B00A5BE51 /* LaunchScreen.storyboard */,
 				3CC2779E1F0AED7B00A5BE51 /* Info.plist */,
+				3CC277AB1F0B048300A5BE51 /* CurrentWeatherViewController.swift */,
 			);
 			path = Swift_Weather;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				3CC277A51F0AEEA100A5BE51 /* NetworkProcessor.swift in Sources */,
 				3CC277951F0AED7B00A5BE51 /* ViewController.swift in Sources */,
 				3CC277931F0AED7B00A5BE51 /* AppDelegate.swift in Sources */,
+				3CC277AC1F0B048300A5BE51 /* CurrentWeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
