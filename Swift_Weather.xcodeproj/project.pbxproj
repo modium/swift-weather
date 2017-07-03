@@ -12,6 +12,7 @@
 		3CC277981F0AED7B00A5BE51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC277961F0AED7B00A5BE51 /* Main.storyboard */; };
 		3CC2779A1F0AED7B00A5BE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC277991F0AED7B00A5BE51 /* Assets.xcassets */; };
 		3CC2779D1F0AED7B00A5BE51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC2779B1F0AED7B00A5BE51 /* LaunchScreen.storyboard */; };
+		3CC277A51F0AEEA100A5BE51 /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC277A41F0AEEA100A5BE51 /* NetworkProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3CC277991F0AED7B00A5BE51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CC2779C1F0AED7B00A5BE51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CC2779E1F0AED7B00A5BE51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC277A41F0AEEA100A5BE51 /* NetworkProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		3CC277911F0AED7B00A5BE51 /* Swift_Weather */ = {
 			isa = PBXGroup;
 			children = (
+				3CC277A61F0AEEA700A5BE51 /* Model */,
 				3CC277921F0AED7B00A5BE51 /* AppDelegate.swift */,
 				3CC277941F0AED7B00A5BE51 /* ViewController.swift */,
 				3CC277961F0AED7B00A5BE51 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				3CC2779E1F0AED7B00A5BE51 /* Info.plist */,
 			);
 			path = Swift_Weather;
+			sourceTree = "<group>";
+		};
+		3CC277A61F0AEEA700A5BE51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CC277A41F0AEEA100A5BE51 /* NetworkProcessor.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC277A51F0AEEA100A5BE51 /* NetworkProcessor.swift in Sources */,
 				3CC277951F0AED7B00A5BE51 /* ViewController.swift in Sources */,
 				3CC277931F0AED7B00A5BE51 /* AppDelegate.swift in Sources */,
 			);
